@@ -1,7 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
 import HuyIntroductionPage from '../pages/HuyIntroductionPage';
-import { HOMEPAGE_PATH, HUY_INTRO_PAGE } from './paths';
+import ProductsPage from '../pages/ProductsPage';
+import { HOMEPAGE_PATH, HUY_INTRO_PAGE, PRODUCTS_PAGE } from './paths';
 
 const route = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const route = createBrowserRouter([
   {
     path: HUY_INTRO_PAGE,
     element: <HuyIntroductionPage />,
+  },
+  {
+    path: PRODUCTS_PAGE,
+    element: <ProductsPage />,
   },
 ]);
 
