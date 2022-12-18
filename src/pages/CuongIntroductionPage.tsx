@@ -1,20 +1,15 @@
-import { useEffect, useState } from 'react';
-import useWindowSize from '../hooks/useWindowSize';
 import cuong from '../assets/cuong.png';
 import BlueChair from '../assets/images/BlueChair.png';
 
 function CuongIntroductionPage() {
   return (
     <div className="w-full h-screen bg-brown_lighter">
-      <div className="w-[500px] h-[500px] flex justify-center items-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-white border-[4px]">
-        <div className="w-2/3 h-2/3 border-[4px] border-white rounded-full"></div>
-      </div>
       <div className="w-full h-full flex justify-center items-end absolute top-0 left-0 z-10">
-        <img src={cuong} alt="cuong" className="w-fit h-fit object-contain" />
+        <img src={cuong} alt="cuong" className="w-fit h-full object-contain" />
       </div>
       <div className="h-full pl-10 grid grid-cols-2 relative z-20">
         <div className="w-2/3 h-full flex flex-col justify-center items-start">
-          <p className="text-[30px]">Hello, I'm</p>
+          <p className="text-[30px]">Hello, I&apos;m</p>
           <p className="text-[40px] font-bold mb-5">NGUYEN CHI CUONG</p>
           <p className="text-[15px]">
             Design with 12 years experience sketching, building and coaching. I
