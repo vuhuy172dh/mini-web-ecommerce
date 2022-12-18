@@ -1,6 +1,8 @@
 import BlueChair from '../assets/images/BlueChair.png';
 import SingleVase from '../assets/images/SingleVase.png';
 import CeilingLamp from '../assets/images/CeilingLamp.png';
+import feature2 from '../assets/images/features2.png';
+import feature3 from '../assets/images/features3.png';
 
 function HomePage() {
   return (
@@ -50,6 +52,66 @@ function HomePage() {
         <button className="py-5 px-10 bg-red rounded-3xl text-[20px] text-white">
           Discover Now
         </button>
+      </div>
+
+      <div className="grid grid-cols-2 mx-auto">
+        {/* Feature 1 */}
+        <div className="w-full h-screen">
+          <div className="mt-12 mb-9 px-28 pt-20 ">
+            <div className="text-6">
+              From a studio in London to a global brand with over 400 outlets
+            </div>
+            <p className="mt-3 text-body-md">
+              When we started Avion, the idea was simple. Make high quality
+              furniture affordable and available for the mass market. <br />{' '}
+              <br />
+              Handmade, and lovingly crafted furniture and homeware is what we
+              live, breathe and design so our Chelsea boutique become the hotbed
+              for the London interior design community.
+            </p>
+            <div className="flex w-2/5 mt-48 ">
+              <button>Get In Touch</button>
+            </div>
+          </div>
+        </div>
+
+        {/* feature 2 */}
+        <div>
+          <img
+            src={feature2}
+            alt="feature2"
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Feature 3 */}
+        <div>
+          <img
+            src={feature3}
+            alt="feature1"
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Feature 4*/}
+        <div className="w-full h-screen">
+          <div className="mt-12 mb-9 px-28 pt-20">
+            <div className="text-6 ">
+              Our service isn’t just personal, it’s actually hyper personally
+              exquisite
+            </div>
+            <p className="text-body-md mt-3">
+              When we started Avion, the idea was simple. Make high quality
+              furniture affordable and available for the mass market. <br />
+              <br /> Handmade, and lovingly crafted furniture and homeware is
+              what we live, breathe and design so our Chelsea boutique become
+              the hotbed for the London interior design community.
+            </p>
+            <div className="flex w-2/5 mt-48 ">
+              <button>Get in touch</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
