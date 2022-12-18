@@ -8,6 +8,17 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        blue: '#0c192c',
+        blue_lighter: '#4fc3dc',
+        red: '#ff2d75',
+      },
+      keyframes: {
+        bubble: {
+          '0%': { transform: 'translateY(100vh) scale(0)' },
+          '100%': { transform: 'translateY(-10vh) scale(1)' },
+        },
+      },
     },
   },
   plugins: [],
