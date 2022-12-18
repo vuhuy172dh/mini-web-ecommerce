@@ -22,7 +22,7 @@ function HuyIntroductionPage() {
   }, [windowWidth]);
 
   return (
-    <div className="w-full h-screen overflow-hidden bg-blue flex justify-center items-center relative">
+    <div className="w-full h-screen overflow-hidden bg-blue flex justify-center items-center gap-4 relative">
       <div className="absolute top-0 left-0 w-full h-full z-10">
         <div className="bubbles">
           {bubblesDur.map((duration: number, index: number) => (
@@ -34,17 +34,17 @@ function HuyIntroductionPage() {
         </div>
       </div>
       <div className="text-white text-[30px] relative z-20">
-        <p>
-          Hello!!!! My name is <span>Hone</span>
+        <p className="my-[5%] font-[700] text-[60px]">
+          Hello!!!! My name is <span className="text-red">Hone</span>
         </p>
-        <p>
-          I&apos;m a <span>Front-end Developer</span>
+        <p className="my-[5%]">
+          I&apos;m a <span className="text-red">Front-end Developer</span>
         </p>
-        <p>
-          I&apos;m in <span>VietNam</span>
+        <p className="my-[5%]">
+          I&apos;m in <span className="text-red">VietNam</span>
         </p>
       </div>
-      <div className="w-[300px] h-[300px] rounded-full overflow-hidden relative z-20">
+      <div className="w-[300px] h-[300px] rounded-full border-[4px] border-blue_lighter overflow-hidden relative z-20">
         <img
           src={HuyImage}
           alt="Hone Personal Image"
