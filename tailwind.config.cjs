@@ -12,6 +12,9 @@ module.exports = {
         blue: '#0c192c',
         blue_lighter: '#4fc3dc',
         red: '#ff2d75',
+        brown_lighter: '#fbebe3',
+        brown: '#de936d',
+        black: '#35221d',
       },
       keyframes: {
         bubble: {
