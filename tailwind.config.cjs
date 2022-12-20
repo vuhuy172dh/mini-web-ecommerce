@@ -4,6 +4,11 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      mobile: '320px',
+      tablet: '768px',
+      laptop: '1024px',
+    },
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
@@ -15,6 +20,13 @@ module.exports = {
         brown_lighter: '#fbebe3',
         brown: '#de936d',
         black: '#35221d',
+        primary: '#4e4d93',
+        dark_primary: '#2a254b',
+        secondary: '#424242',
+        dark_secondary: '#1b1b1b',
+        light_grey: '#f9f9f9',
+        border_grey: '#ebe8f4',
+        border_dark: '#cac6da',
       },
       keyframes: {
         bubble: {

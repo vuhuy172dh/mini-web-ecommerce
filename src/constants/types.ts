@@ -3,4 +3,10 @@ type TWindowProps = {
   height: number;
 };
 
-export type { TWindowProps };
+type TProductProps = {
+  image?: string;
+  name: string;
+  price: number;
+};
+
+export type { TWindowProps, TProductProps };
