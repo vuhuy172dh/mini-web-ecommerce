@@ -3,6 +3,8 @@ import SingleVase from '../assets/images/SingleVase.png';
 import CeilingLamp from '../assets/images/CeilingLamp.png';
 import feature2 from '../assets/images/features2.png';
 import feature3 from '../assets/images/features3.png';
+import { Link } from 'react-router-dom';
+import { HUY_INTRO_PAGE } from '../constants/paths';
 
 function HomePage() {
   return (
@@ -108,7 +110,9 @@ function HomePage() {
               the hotbed for the London interior design community.
             </p>
             <div className="flex w-2/5 mt-48 ">
-              <button>Get in touch</button>
+              <Link to={HUY_INTRO_PAGE}>
+                <button>Get in touch</button>
+              </Link>
             </div>
           </div>
         </div>
